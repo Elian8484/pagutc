@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Universidad Técnica de Cotopaxi</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jfif" alt="Logo Universidad Técnica de Cotopaxi" class="logo-uni" style="vertical-align: middle; max-height: 70px; margin-right: 18px;">
+        <h1 style="display: inline-block; vertical-align: middle;">Biblioteca Universidad Técnica de Cotopaxi</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Préstamos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Información de la universidad, se muestra primero -->
+        <section id="info-universidad" class="info-universidad">
+            <div class="info-uni-contenido">
+                <img src="imagenes/logo.jfif" alt="Logo Universidad Técnica de Cotopaxi" class="logo-uni">
+                <h2>Universidad Técnica de Cotopaxi</h2>
+                <p class="descripcion">
+                    Institución pública de educación superior ubicada en Latacunga, Ecuador.<br>
+                    Nuestra biblioteca ofrece acceso a recursos académicos de todas las áreas del conocimiento, apoyando la formación integral de nuestros estudiantes y docentes.
+                </p>
+                <div class="info-contacto">
+                    <div>
+                        <strong>Dirección:</strong><br>
+                        Av. Simón Rodríguez s/n y Antonia Vela, Latacunga
+                    </div>
+                    <div>
+                        <strong>Teléfono:</strong><br>
+                        (03) 2815-745
+                    </div>
+                    <div>
+                        <strong>Correo:</strong><br>
+                        biblioteca@utc.edu.ec
+                    </div>
+                </div>
+                <div class="acceso">
+                    <span>Para acceder al catálogo y servicios de la biblioteca, por favor inicie sesión con su cuenta institucional.</span>
+                </div>
+                <div class="scroll-down">
+                    <span>Desplácese para continuar</span>
+                    <div class="flecha"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acciones-principales" class="oculto">
+            <h2>Acciones Principales</h2>
+            <button id="buscar-libro-btn">Buscar Libro</button>
+            <button id="prestar-libro-btn">Prestar Libro</button>
+            <button id="devolver-libro-btn">Devolver Libro</button>
+        </section>
+
+        <section id="resultados-busqueda" class="oculto">
+            <h2>Catálogo de Libros</h2>
+            <div id="lista-libros"></div>
+        </section>
+
+        <section id="formulario-prestamo" class="oculto">
+            <h2>Formulario de Préstamo</h2>
+            <form id="form-prestar">
+                <div>
+                    <label for="codigo-libro-prestar">Código del Libro:</label>
+                    <input type="text" id="codigo-libro-prestar" required>
+                </div>
+                <div>
+                    <label for="id-usuario-prestar">ID de Usuario:</label>
+                    <input type="text" id="id-usuario-prestar" required>
+                </div>
+                <button type="submit">Prestar</button>
+            </form>
+        </section>
+
+        <section id="formulario-devolucion" class="oculto">
+            <h2>Formulario de Devolución</h2>
+            <form id="form-devolver">
+                <div>
+                    <label for="codigo-libro-devolver">Código del Libro:</label>
+                    <input type="text" id="codigo-libro-devolver" required>
+                </div>
+                <button type="submit">Devolver</button>
+            </form>
+        </section>
+
+        <section id="gestion-usuarios" class="oculto">
+            <h2>Gestión de Usuarios</h2>
+            <!-- Aquí puedes agregar más contenido de usuarios si lo deseas -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Biblioteca Universidad Técnica de Cotopaxi</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
